@@ -6,7 +6,7 @@
 ### Contents :book:
 * [Description](https://github.com/ChloeDumit/AirBnB_clone#description-pencil2)
 * [Environment](https://github.com/ChloeDumit/AirBnB_clone#environment-robot)
-* [Example]https://github.com/ChloeDumit/AirBnB_clone#example-bulb)
+* [Example](https://github.com/ChloeDumit/AirBnB_clone#example-bulb)
 * [Usage](https://github.com/ChloeDumit/AirBnB_clone#usage-memo)
 * [Files](https://github.com/ChloeDumit/AirBnB_clone#files-file_folder)
 * [How to Install](https://github.com/ChloeDumit/AirBnB_clone#how-to-install-computer-triangular_flag_on_post)
@@ -15,7 +15,7 @@
 * [Authors](https://github.com/ChloeDumit/AirBnB_clone#authors-black_nib)
 ---
 
-### Description :Matt:
+### Description :pencil2:
 
 First step: Write a command interpreter to manage your AirBnB objects.
 This is the first step towards building your first full web application: the AirBnB clone. This first step is very important because you will use what you build during this project with all other following projects: HTML/CSS templating, database storage, API, front-end integration
@@ -96,7 +96,7 @@ On **interactive mode:**
 
 Clone the repositoy below:
 ```bash
-git clone https://github.com/didierrevelo/AirBnB_clone/tree/main
+git clone https://github.com/ChloeDumit/AirBnB_clone.git
 ```
 ---
 
@@ -126,20 +126,20 @@ Documented commands (type help <topic>):
 EOF  all  create  destroy  help  quit  show  update
 
 (hbnb)create User
-05bc8cd2-f889-4280-a731-b865de21d8fc
-(hbnb)show User 05bc8cd2-f889-4280-a731-b865de21d8fc
-[User] (05bc8cd2-f889-4280-a731-b865de21d8fc) {'id': '05bc8cd2-f889-4280-a731-b865de21d8fc', 'updated_at': datetime.datetime(2020, 7, 1, 17, 36, 53, 271047), 'created_at': datetime.datetime(2020, 7, 1, 17, 36, 53, 271006)}
+05bc8cd2-f889-4280-a731-b865de21d8dc
+(hbnb)show User 05bc8cd2-f889-4280-a731-b865de21d8dc
+[User] (05bc8cd2-f889-4280-a731-b865de21d8dc) {'id': '05bc8cd2-f889-4280-a731-b865de21d8dc', 'updated_at': datetime.datetime(2021, 2, 17, 15, 40, 63, 271047), 'created_at': datetime.datetime(2021, 2, 17, 15, 40, 63, 271006)}
 (hbnb)create BaseModel
-0cdb9ff1-187c-4c90-b60a-2c3137dd532a
-(hbnb)update User 05bc8cd2-f889-4280-a731-b865de21d8fc name "Didier"
+0cdb9ff1-187c-4c90-b60a-2d3137dd532a
+(hbnb)update User 05bc8cd2-f889-4280-a731-b865de21d8dc name "Chloe"
 (hbnb)all
-["[BaseModel] (0cdb9ff1-187c-4c90-b60a-2c3137dd532a) {'id': '0cdb9ff1-187c-4c90-b60a-2c3137dd532a', 'updated_at': datetime.datetime(2020, 11, 5, 2, 46, 21, 904671), 'created_at': datetime.datetime(2020, 11, 5, 2, 46, 21, 904597)}", "[User] (05bc8cd2-f889-4280-a731-b865de21d8fc) {'id': '05bc8cd2-f889-4280-a731-b865de21d8fc', 'updated_at': datetime.datetime(2020, 11, 5, 2, 47, 3, 78298), 'created_at': datetime.datetime(2020, 11, 5, 2, 45, 28, 22255), 'name': 'Didier'}"]
+["[BaseModel] (0cdb9ff1-187c-4c90-b60a-2d3137dd532a) {'id': '0cdb9ff1-187c-4c90-b60a-2d3137dd532a', 'updated_at': datetime.datetime(2021, 2, 17, 4, 46, 21, 904671), 'created_at': datetime.datetime(2021, 2, 17, 4, 46, 21, 904597)}", "[User] (05bc8cd2-f889-4280-a731-b865de21d8dc) {'id': '05bc8cd2-f889-4280-a731-b865de21d8dc', 'updated_at': datetime.datetime(2021, 2, 17, 4, 46, 3, 78298), 'created_at': datetime.datetime(2021, 2, 17, 4, 46, 28, 22255), 'name': "Chloe'}"]
 (hbnb)create User
 b96de278-eb8b-4bfe-8e03-5ec0243c28ff
-(hbnb) show BaseModel 0cdb9ff1-187c-4c90-b60a-2c3137dd532a
-[BaseModel] (0cdb9ff1-187c-4c90-b60a-2c3137dd532a) {'id': '0cdb9ff1-187c-4c90-b60a-2c3137dd532a', 'updated_at': datetime.datetime(2020, 11, 5, 2, 46, 21, 904671), 'created_at': datetime.datetime(2020, 11, 5, 2, 46, 21, 904597)}
-(hbnb) destroy BaseModel 0cdb9ff1-187c-4c90-b60a-2c3137dd532a
-(hbnb) show BaseModel 0cdb9ff1-187c-4c90-b60a-2c3137dd532a
+(hbnb) show BaseModel 0cdb9ff1-187c-4c90-b60a-2d3137dd532a
+[BaseModel] (0cdb9ff1-187c-4c90-b60a-2d3137dd532a) {'id': '0cdb9ff1-187c-4c90-b60a-2d3137dd532a', 'updated_at': datetime.datetime(2021, 2, 17, 4, 46, 21, 904671), 'created_at': datetime.datetime(2021, 2, 17, 4, 46, 21, 904597)}
+(hbnb) destroy BaseModel 0cdb9ff1-187c-4c90-b60a-2d3137dd532a
+(hbnb) show BaseModel 0cdb9ff1-187c-4c90-b60a-2d3137dd532a
 ** no instance found **
 (hbnb) quit
 ```
