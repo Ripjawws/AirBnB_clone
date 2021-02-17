@@ -1,4 +1,4 @@
-![](image goes here)
+![](https://github.com/ChloeDumit/AirBnB_clone/blob/main/images/logo.png)
 
 # AirBnB clone - The console :computer:
 
@@ -36,7 +36,7 @@ This is the console /command interpreter for the Holberton Airbnb clone project.
 
 When you run the./console.py console on a terminal, A prompt (hbnb) will apear on your screem, in where you can type your command and when you hit enter it will run the command and do that you ask for displaying the output on the stdout(Standar Output) then it will be waiting for you to enter another command, all of this in interacive mode. But also it have a non-interactive mode in where you just tell what command to execute
 
-![](image goes here)
+![](https://github.com/ChloeDumit/AirBnB_clone/blob/main/images/map.png)
 ---
 
 ### Environment :robot:
