@@ -8,6 +8,22 @@ import unittest
 from models.base_model import BaseModel
 import os
 import pep8
+""" test class """
+
+
+def setUp():
+    """ setup function
+    """
+    if os.path.isfile("file.json"):
+        os.remove("file.json")
+    storage._FileStorage__objects.clear()
+
+
+def tearDown():
+    """ tear down function
+    """
+    if os.path.isfile("file.json"):
+        os.remove("file.json")
 
 
 class Test_BaseModel(unittest.TestCase):
