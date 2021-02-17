@@ -17,13 +17,18 @@ import shlex
 """
 AirBnB Clone
 """
+
+
 class HBNBCommand(cmd.Cmd):
     """ command interpreter """
 
-    classes = {'BaseModel': BaseModel, 'Amenity': Amenity, 'City': City, 'Place': Place, 'Review': Review, 'State': State, 'User': User}
-    check = ["BaseModel", "Amenity", "City", "Place", "Review", "State", "User"]
+    classes = {'BaseModel': BaseModel, 'Amenity': Amenity,
+               'City': City, 'Place': Place, 'Review': Review,
+               'State': State, 'User': User}
+    check = ["BaseModel", "Amenity", "City", "Place", "Review",
+             "State", "User"]
     prompt = '(hbnb)'
-    
+
     def emptyline(self):
         """ do nothing """
         pass
@@ -69,7 +74,6 @@ class HBNBCommand(cmd.Cmd):
             else:
                 print(data[key])
 
-
     def do_destroy(self, line):
         """ Deletes an instance based on the class name and id """
         str_split = shlex.split(line)
@@ -90,9 +94,9 @@ class HBNBCommand(cmd.Cmd):
                 del data[key]
                 storage.save()
 
-
     def do_all(self, line):
-        """ Prints all string representation of all instances based or not on the class name. """
+        """ Prints all string representation of all
+        instances based or not on the class name. """
         n = line.split()
         obj_list = []
         if len(n) == 0:
@@ -126,9 +130,6 @@ class HBNBCommand(cmd.Cmd):
                 print("** value missing **")
             else:
                 setattr(obj[key], n[2], n[3])
-                
-
-
 
 if __name__ == '__main__':
     HBNBCommand().cmdloop()
