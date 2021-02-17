@@ -7,6 +7,8 @@ import json
 import uuid
 import models
 
+""" class base model """
+
 
 class BaseModel:
     """Base Class with public instance attributes and methods"""
@@ -23,11 +25,11 @@ class BaseModel:
             self.id = str(uuid.uuid4())
             self.created_at = self.updated_at = datetime.now()
             models.storage.new(self)
-            
 
     def __str__(self):
         """ Return the human readable print format"""
-        return ("[{}] ({}) {}".format(self.__class__.__name__, self.id, self.__dict__))
+        return ("[{}] ({}) {}".format(self.__class__.__name__,
+                self.id, self.__dict__))
 
     def save(self):
         """ updates the public instance attribute
@@ -40,7 +42,7 @@ class BaseModel:
         keys/values of __dict__ of the instance"""
         my_dict = {}
         for k, value in self.__dict__.items():
-            if k =='created_at' or k == 'updated_at':
+            if k == 'created_at' or k == 'updated_at':
                 my_dict[k] = value.isoformat()
             else:
                 my_dict[k] = value
