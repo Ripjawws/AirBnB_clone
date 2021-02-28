@@ -4,6 +4,7 @@ body {
     color: #484848;
     font-size: 14px;
     font-family: Circular, "Helvetica Neue", Helvetica,Arial,sans-serif;
+
 }
 
 .container {
@@ -12,4 +13,5 @@ body {
     margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
+
 }
