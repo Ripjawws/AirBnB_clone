@@ -1,6 +1,6 @@
 header {
     background-color: white;
-    height: 60px;
+    height: 70px;
     width: 100%;
     border-bottom-style: solid;
     border-bottom-width: 1px;
@@ -8,4 +8,4 @@ header {
     background: url(../images/logo.png);
     background-repeat: no-repeat;
     background-position: left;
-    
+}
